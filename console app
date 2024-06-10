@@ -1,0 +1,16 @@
+namespace Консольноеприложение
+{
+    class Programm
+ {
+    static void Main(string[] args)
+    {
+            string data;
+            data = Console.ReadLine();
+            Console.WriteLine("Привет "+data+ "!!!");
+        }
+
+
+
+
+ }
+}
