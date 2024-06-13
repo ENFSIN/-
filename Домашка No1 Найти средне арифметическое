@@ -1,0 +1,27 @@
+namespace Консольноеприложение
+{ /*Операторы
+   * арифметические операции с числами
+   */
+    class Programm
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Введите первое число; ");
+            string a  = Console.ReadLine();
+            double a2 =Convert.ToDouble(a);
+            Console.WriteLine("Введите второй число; ");
+            string b = Console.ReadLine();
+            double b2 = Convert.ToDouble(b);
+           double c = a2 + b2;
+            Console.WriteLine("среднее");
+            double result = c / 2;
+            Console.WriteLine(result);
+          
+
+
+
+
+
+        }
+    }
+}
