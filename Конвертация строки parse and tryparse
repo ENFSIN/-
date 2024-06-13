@@ -1,0 +1,30 @@
+using System.Globalization;
+using System.Numerics;
+using System;
+using System.Runtime.InteropServices;
+
+namespace Консольноеприложение
+{ /* Конвертация строки rase и tryparse
+   */
+    class Programm
+    {
+        static void Main(string[] args)
+        {
+            string str = "1345";
+            int a;
+            
+            bool result = int.TryParse(str, out a);
+            if (result) 
+            {
+                Console.WriteLine("Операция успешна, значение ="+a);
+            }
+            else 
+            {
+                Console.WriteLine("Не удалось конверитровтаь");
+            }
+
+
+
+        }
+    }
+}
