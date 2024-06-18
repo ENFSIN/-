@@ -11,18 +11,18 @@
         /// <param name="args">Аргументы параметров.</param>
        public static void Main(string[] args)
        {
-            Console.WriteLine("введите число");
+            Console.WriteLine("Введите число:");
             double a = Convert.ToDouble(Console.ReadLine());
 
-            Console.WriteLine("Введите второй число; ");
+            Console.WriteLine("Введите второе число:");
             double b = Convert.ToDouble(Console.ReadLine());
 
-            Console.WriteLine("Введите третье число;");
+            Console.WriteLine("Введите третье число:");
             double c = Convert.ToDouble(Console.ReadLine());
             double e = a + b + c;
             double d = a * b * c;
-            Console.WriteLine("Сумма=" + e);
-            Console.WriteLine("Произведение=" + d);
+            Console.WriteLine($"Сумма={e}");
+            Console.WriteLine($"Произведение={d}");
        }
     }
 }
