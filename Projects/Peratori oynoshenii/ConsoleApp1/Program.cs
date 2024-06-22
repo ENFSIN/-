@@ -11,16 +11,10 @@
         /// <param name="args">Аргументы параметров.</param>
        public static void Main(string[] args)
        {
-            int a;
-            a = int.Parse(Console.ReadLine());
-            if (a % 2 == 0)
-            {
-                Console.WriteLine("Число четное.");
-            }
-            else
-            {
-                Console.WriteLine("Число не четное.");
-            }
+           string classify;
+           int a = int.Parse(Console.ReadLine());
+           classify = (a % 2 == 0) ? "Число четное." : "Число не четное.";
+           Console.WriteLine(classify);
        }
    }
 }
