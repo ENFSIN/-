@@ -14,16 +14,14 @@
             while (true)
             {
                 Console.Clear();
-                double firstValue, secondValue;
-                string action;
                 Console.WriteLine("Введите первое число");
-                firstValue = double.Parse(Console.ReadLine());
+                double firstValue = double.Parse(Console.ReadLine());
 
                 Console.WriteLine("Введите второе число");
-                secondValue = double.Parse(Console.ReadLine());
+                double secondValue = double.Parse(Console.ReadLine());
 
                 Console.WriteLine("Выберите операцию:'+' '-' '*' '/' ");
-                action = Console.ReadLine();
+                string action = Console.ReadLine();
 
                 switch (action)
                 {
@@ -39,7 +37,7 @@
                     case "/":
                         if (secondValue == 0)
                         {
-                            Console.WriteLine(0);
+                            Console.WriteLine("Произошла ошибка: делените на ноль.");
                         }
                         else
                         {
@@ -48,7 +46,7 @@
 
                         break;
                     default:
-                        Console.WriteLine("Не верное действие.");
+                        Console.WriteLine($"Операция {action} неизвестна");
                         break;
                 }
                 Console.ReadLine();
